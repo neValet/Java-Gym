@@ -1,5 +1,6 @@
 package ua.lviv.iot.gym.managers;
 
+import ua.lviv.iot.gym.enums.PressParts;
 import ua.lviv.iot.gym.models.*;
 
 import java.util.ArrayList;
@@ -18,7 +19,7 @@ public class TrainerImpl implements Trainer {
     @Override
     public void setSimulators() {
         result.add(new Racetrack("racetrack", 2000, 900, "White", "jogging"));
-        result.add(new PressTrainingSimulator("pressTrainingSimulator", 200, 600, "Black", "pressLifting"));
+        result.add(new PressTrainingSimulator("pressTrainingSimulator", 200, 600, "Black", "press_lifting", PressParts.LOWER_STOMACH_PRESS));
         result.add(new Barbell("Barbell", 250, 1200, "Silver", "liftingFromChest"));
         result.add(new Dumbbells("Dumbbells", 80, 1200, "Gray", "dumbbellsLifting", 10));
     }
