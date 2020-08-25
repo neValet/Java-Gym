@@ -6,6 +6,10 @@ public class PressTrainingSimulator extends Simulators {
 
     private PressParts pressParts;
 
+    public PressTrainingSimulator() {
+
+    }
+
     public PressTrainingSimulator(String pressTrainingSimulator, int i, int i1, String black, String pressLifting) {
 
     }

@@ -10,12 +10,17 @@ public class TrainerImpl implements Trainer {
 
     private List<Simulators> result = new ArrayList<Simulators>();
 
+    private List<Simulators> simulators;
+    public TrainerImpl(final List<Simulators> simulators) {
+        this.simulators = simulators;
+    }
+
     @Override
     public void setSimulators() {
         result.add(new Racetrack("racetrack", 2000, 900, "White", "jogging"));
         result.add(new PressTrainingSimulator("pressTrainingSimulator", 200, 600, "Black", "pressLifting"));
         result.add(new Barbell("Barbell", 250, 1200, "Silver", "liftingFromChest"));
-        result.add(new Dumbbells("Dumbbells", 80, 1200, "Gray", "dumbbellsLifting"));
+        result.add(new Dumbbells("Dumbbells", 80, 1200, "Gray", "dumbbellsLifting", 10));
     }
 
     @Override

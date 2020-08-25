@@ -9,8 +9,8 @@ public class Barbell extends Simulators {
     public Barbell() {
     }
 
-    public Barbell(String name, double price, int exerciseDuration, String colour, String excercise) {
-        super(name, price, exerciseDuration, colour, excercise);
+    public Barbell(String name, double price, int exerciseDuration, String colour, String exercise) {
+        super(name, price, exerciseDuration, colour, exercise);
     }
 
     public BarbellTypes getBarbellTypes() {
