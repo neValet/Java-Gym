@@ -22,6 +22,17 @@ public class Simulators {
         this.exercise = excercise;
     }
 
+    public String getHeaders() {
+        return "name, price, exerciseDuration, colour, exercise";
+
+    }
+
+    public String toCSV() {
+        return getName() + ", " + getPrice() + ", " +  getExerciseDuration() + ", " + getColour()
+                + ", " + getExercise();
+
+    }
+
     public String getName() {
         return name;
     }

@@ -10,12 +10,19 @@ public class PressTrainingSimulator extends Simulators {
 
     }
 
-    public PressTrainingSimulator(String pressTrainingSimulator, int i, int i1, String black, String pressLifting) {
-
-    }
-
     public PressTrainingSimulator(String name, double price, int exerciseDuration, String colour, String exercise, PressParts pressParts) {
         super(name, price, exerciseDuration, colour, exercise);
+        this.pressParts = pressParts;
+    }
+
+    @Override
+    public String getHeaders() {
+        return super.getHeaders() + ", pressParts";
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV() + ", " + getPressParts();
     }
 
     public PressParts getPressParts() {

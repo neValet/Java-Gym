@@ -12,6 +12,16 @@ public class Racetrack extends Simulators {
         super(name, price, exerciseDuration, colour, exercise);
     }
 
+    @Override
+    public String getHeaders() {
+        return super.getHeaders();
+    }
+
+    @Override
+    public String toCSV() {
+        return super.toCSV();
+    }
+
     public int getSpeed() {
         return speed;
     }
